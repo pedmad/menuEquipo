@@ -3,130 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con Barra de Navegación</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            display: flex;
-        }
-        .sidebar {
-            width: 250px;
-            height: 100vh;
-            background: linear-gradient(#540099,#150020);
-            color: white;
-            padding-top: 20px;
-            position: fixed;
-            text-align: left;
-            transition: width 0.3s ease;
-        }
-        .sidebar a {
-            display: block;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-        }
-        .sidebar a:hover {
-            background: linear-gradient(#079be0,#01595f);
-        }
-        .content {
-            margin-left: 250px;
-            padding: 20px;
-            flex: 1;
-            transition: margin-left 0.3s ease;
-        }
-        
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 60px;
-                padding-top: 10px;
-            }
-            .sidebar h2 {
-                display: none;
-            }
-            .sidebar a {
-                text-align: center;
-                padding: 10px 0;
-                font-size: 12px;
-            }
-            .content {
-                margin-left: 60px;
-            }
-        }
-    </style>
+    <title>Proyectos del Equipo</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2 style="text-align: center;">Menú</h2>
-        <a href="Paises/html/index.html">PAISES</a>
-        <a href="linea_time/html/cv.html">CURRICULUM</a>
-        <a href="linea_time/html/index.html">LINEA DEL TIEMPO</a>
-        <a href="guia_turistica/html/index.html">GUIA TURISTICA</a>
-    </div>
-
-    <div class="content">
-        <h1>Bienvenido a Nuestra Plataforma de Páginas Web</h1>
-        <p>En nuestra plataforma, ofrecemos diferentes páginas web diseñadas para brindar información útil, interactiva y visualmente atractiva. Nos enfocamos en ofrecer una experiencia intuitiva que permita aprender y explorar de manera sencilla y dinámica.</p>
-        
-        <h2>Línea del Tiempo - Currículum Vitae</h2>
-        <p>Una forma innovadora de visualizar la trayectoria profesional y académica de una persona. Con una línea del tiempo interactiva, es más fácil entender la evolución de una carrera y destacar logros importantes.</p>
-        
-        <h3>Características principales:</h3>
-        <ul>
-            <li>Diseño interactivo y dinámico para una mejor visualización.</li>
-            <li>Orden cronológico claro y estructurado.</li>
-            <li>Ideal para estudiantes, profesionales y reclutadores.</li>
-            <li>Fácil de actualizar y compartir.</li>
-        </ul>
-        
-        <h3>Beneficios de usar esta herramienta:</h3>
-        <ul>
-            <li>Presentación más atractiva y profesional de tu currículum.</li>
-            <li>Destacar habilidades y experiencia de manera organizada.</li>
-            <li>Posibilidad de incluir enlaces, imágenes o proyectos relevantes.</li>
-            <li>Mayor impacto visual en entrevistas y procesos de selección.</li>
-        </ul>
-        
-        <h2>Explorador de Países</h2>
-        <p>Descubre el mundo con nuestra página dedicada a la exploración de diferentes países. Ya sea que busques datos generales, curiosidades o información sobre historia y cultura, este sitio es perfecto para viajeros, estudiantes y amantes del conocimiento.</p>
-        
-        <h3>¿Qué puedes encontrar aquí?</h3>
-        <ul>
-            <li>Información básica sobre cada país (capital, población, idioma, moneda).</li>
-            <li>Datos históricos y culturales relevantes.</li>
-            <li>Lugares turísticos y sitios emblemáticos.</li>
-            <li>Costumbres y tradiciones destacadas.</li>
-            <li>Curiosidades y hechos interesantes.</li>
-        </ul>
-        
-        <h3>Algunas secciones destacadas:</h3>
-        <ul>
-            <li><strong>Historia y cultura:</strong> Conoce los orígenes y evolución de cada país.</li>
-            <li><strong>Gastronomía típica:</strong> Descubre platillos tradicionales y bebidas icónicas.</li>
-            <li><strong>Patrimonios de la humanidad:</strong> Explora sitios protegidos por la UNESCO.</li>
-            <li><strong>Costumbres y festividades:</strong> Aprende sobre las celebraciones más importantes.</li>
-        </ul>
-        
-        <h2>Guía Turística</h2>
-        <p>Planifica tu próxima aventura con nuestra completa guía de viajes. Ya sea que busques destinos paradisíacos, ciudades llenas de historia o experiencias únicas, aquí encontrarás todo lo que necesitas para viajar con confianza.</p>
-        
-        <h3>Lo que encontrarás en nuestra guía:</h3>
-        <ul>
-            <li>Reseñas de destinos imperdibles.</li>
-            <li>Consejos para viajar con seguridad y ahorrar dinero.</li>
-            <li>Recomendaciones de hospedajes y restaurantes.</li>
-            <li>Listas de actividades y experiencias por hacer en cada destino.</li>
-            <li>Guías de transporte y movilidad.</li>
-        </ul>
-        
-        <h3>¿Por qué usar nuestra guía turística?</h3>
-        <ul>
-            <li>Información actualizada y confiable sobre cada destino.</li>
-            <li>Consejos para evitar problemas comunes al viajar.</li>
-            <li>Listas con lo mejor de cada lugar: playas, montañas, ciudades y más.</li>
-            <li>Datos curiosos y culturales para enriquecer tu experiencia.</li>
-        </ul>
-    </div>
+    <header class="barra">
+        <h1>Proyectos del Equipo</h1>
+        <p>Bienvenid@ a la presentación de proyectos. Aquí encontrarás los trabajos realizados durante la Unidad 1.</p>
+    </header>
     
+    <div class="container">
+        <div class="member" style="background: linear-gradient(115deg, #07bedf, #0d515e);">
+            <a href="https://marigo2312.github.io/Evidencias/" target="_blank">
+                <img src="Media/Mari.jpg" class="default" alt="Mari">
+                <img src="Media/Conejo.jpg" class="hover" alt="Mari Hover">
+            </a>
+            <h2>Maria de Jesus Rivera Gómez</h2>
+            <p>Email: mariana@example.com</p>
+            <p>Tel: 123-456-7890</p>
+        </div>
+
+        <div class="member" style="background: linear-gradient(115deg, #660b69, #a666ac);">
+            <a href="https://samanthar-cruz.github.io/u2progWeb/" target="_blank">
+                <img src="Media/Sam.jpg" class="default" alt="Sam">
+                <img src="Media/Abeja.jpg" class="hover" alt="Sam Hover">
+            </a>
+            <h2>Samantha Rodriguez Cruz</h2>
+            <p>Email: samanthaacr@gmail.com</p>
+            <p>Tel: 987-654-3210</p>
+        </div>
+        
+        <div class="member" style="background: linear-gradient(115deg, #036b40, #5ad3af);">
+            <a href="https://pedmad.github.io/evidenciasU1/" target="_blank">
+                <img src="Media/Pedro.jpg" class="default" alt="Pedro">
+                <img src="Media/Pu.jpg" class="hover" alt="Pedro Hover">
+            </a>
+            <h2>Pedro Coronado Carmona</h2>
+            <p>Email: pedmad1@gmail.com</p>
+            <p>Tel: 272-235-9406</p>
+        </div>
+
+        <div class="member" style="background: linear-gradient(115deg, #6b0303, #d35a5a);">
+            <a href="https://victorzunigaa.github.io/victor.github.io/" target="_blank">
+                <img src="Media/Vcitor.jpg" class="default" alt="Victor">
+                <img src="Media/Raton.jpg" class="hover" alt="Victor Hover">
+            </a>
+            <h2>Victor Zúñiga Avalos</h2>
+            <p>Email: victor@example.com</p>
+            <p>Tel: 444-789-1234</p>
+        </div>
+
+        <div class="member" style="background: linear-gradient(115deg, #6b5b03, #afd35a);">
+            <a href="https://sagecorsen.github.io/isabel.github.io/" target="_blank">
+                <img src="Media/Ash.jpg" class="default" alt="Isabel">
+                <img src="Media/Snoopy.jpg" class="hover" alt="Isabel Hover">
+            </a>
+            <h2>Isabel Dias Galindo</h2>
+            <p>Email: isabel@example.com</p>
+            <p>Tel: 333-456-7890</p>
+        </div>
+    </div>
 </body>
 </html>
